@@ -14,7 +14,7 @@ SPIDER_MODULES = ['splashtest.spiders']
 NEWSPIDER_MODULE = 'splashtest.spiders'
 
 DOWNLOADER_MIDDLEWARES = {
-    'splashtest.middleware.splash.SplashMiddleware': 725,
+    'scrapy_splash.SplashMiddleware': 725,
 }
 
 SPLASH_ENABLED = True
