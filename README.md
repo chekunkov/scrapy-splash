@@ -10,11 +10,25 @@ See http://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 
 ```python
 DOWNLOADER_MIDDLEWARES = {
-    'splashtest.middleware.splash.SplashMiddleware': 725,
+    'scrapy_splash.SplashMiddleware': 725,
 }
 ```
 
 Order `725` is just before `HttpProxyMiddleware` (750) in default scrapy settings.
+
+Development
+-----------
+
+For development use `splashtest` project from repository. To install
+dependencies:
+
+```
+cd splashtest
+pip install -r requirements.txt
+
+```
+
+This will install all required packages and scrapy-splash itself.
 
 Available settings
 ------------------
