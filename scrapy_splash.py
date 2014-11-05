@@ -7,6 +7,7 @@ import w3lib.url
 
 _matches = lambda url, regexs: any((r.search(url) for r in regexs))
 
+
 class SplashMiddleware(object):
 
     url = 'http://localhost:8050/render.html'
